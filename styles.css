@@ -1,0 +1,44 @@
+/** @format */
+:root {
+  --font-base: Libre Baskerville;
+}
+
+bodi {
+  font-family: var(--font-base);
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+@media screen and(min-width: 760px) {
+  .container {
+    background-color: rgb(82, 165, 165);
+  }
+}
+.side-bar {
+  width: 300px;
+  padding-top: 30px;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.img-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 255, 0.207);
+}
+
+.summary-comtainer {
+  padding: 20px;
+}
+.title-name {
+  font-weight: 700;
+}
