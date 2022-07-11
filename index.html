@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,35 +21,54 @@
   </head>
   <body class="container">
     <aside class="side-bar">
-      <div class="img-container"></div>
+      <div class="img-container">
+        <img src="./IMG_0015 2.jpg" alt="foto" />
+      </div>
       <section>
-        <h2>CONTACTS</h2>
-        <ul>
-          <li><a href="tel:+380989444437">+38 098 94 44 437</a></li>
-          <li>
-            <a href="mailto:ashevelevmti@gmail.com">ashevelevmti@gmail.com</a>
-          </li>
-          <li>
-            <a href="https://github.com/SHEVEL0V" target="_blank"
-              >github.com/SHEVEL0V</a
+        <h2 class="side-bar__title">CONTACTS</h2>
+        <ul class="side-bar__list">
+          <li class="side-bar__item">
+            <a class="side-bar__link" href="tel:+380989444437">
+              <svg class="svg-icon"><use href="./sprite.svg#tel"></use></svg>
+              +38 098 94 44 437</a
             >
           </li>
-          <li>
+          <li class="side-bar__item">
+            <a class="side-bar__link" href="mailto:ashevelevmti@gmail.com">
+              <svg class="svg-icon"><use href="./sprite.svg#mail"></use></svg
+              >ashevelevmti@gmail.com</a
+            >
+          </li>
+          <li class="side-bar__item">
             <a
+              class="side-bar__link"
+              href="https://github.com/SHEVEL0V"
+              target="_blank"
+            >
+              <svg class="svg-icon"><use href="./sprite.svg#git"></use></svg>
+              SHEVEL0V</a
+            >
+          </li>
+          <li class="side-bar__item">
+            <a
+              class="side-bar__link"
               href="https://www.linkedin.com/in/andriy-shevelov-5439b3244/"
               target="_blank"
-              >www.linkedin.com/andriy-shevelov</a
             >
+              <svg class="svg-icon"><use href="./sprite.svg#in"></use></svg>
+              andriy-shevelov
+            </a>
           </li>
         </ul>
       </section>
       <section>
-        <h2>TECH SKILLS</h2>
+        <h2 class="side-bar__title">TECH SKILLS</h2>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>SASS</li>
           <li>GIT</li>
+          <li>Parcel</li>
           <li>WebPack/Gulp</li>
           <li>JavaScript</li>
           <li>React</li>
@@ -58,15 +77,20 @@
         </ul>
       </section>
       <section>
-        <h2>SOFT SKILLS</h2>
+        <h2 class="side-bar__title">SOFT SKILLS</h2>
         <ul>
-          <li>Teamwork</li>
-          <li>Communication</li>
-          <li>Decision-making</li>
+          <li>Accurate</li>
+          <li>Attentive</li>
+          <li>Autonomous</li>
+          <li>Broad-minded</li>
+          <li>Calm</li>
+          <li>Cooperative</li>
+          <li>Eager to learn</li>
+          <li>Punctual</li>
         </ul>
       </section>
       <section>
-        <h2>LANGUAGE SKILLS</h2>
+        <h2 class="side-bar__title">LANGUAGE SKILLS</h2>
         <ul>
           <li>Ukrainian — native</li>
           <li>Russian — native</li>
@@ -75,31 +99,46 @@
       </section>
     </aside>
     <div class="summary-comtainer">
-      <section>
-        <h1 class="title-name">ANDRII SHEVELOV</h1>
-        <p>JUNIOR FRONT-END DEVELOPER</p>
-        <h2>SUMMARY</h2>
-        <p>
+      <section class="summary__title-container">
+        <h1 class="summary__title-name">ANDRIY SHEVELOV</h1>
+        <p class="summary__title-name--des">JUNIOR FRONT-END DEVELOPER</p>
+        <h2 class="summary__title">SUMMARY</h2>
+        <p class="summary__title--des">
           I am a Junior Front-End developer. I focus on HTML5, CSS3, JS, React.
           Development, practice and work for the result are important for me.
         </p>
       </section>
       <section>
-        <h2>PROJECTS</h2>
+        <h2 class="summary__title-s">PROJECTS</h2>
         <ul>
           <li>
-            <a href="https://github.com/SHEVEL0V" target="_blank">1</a>
+            <a
+              class="summary__link"
+              href="https://08-phonebook.netlify.app/"
+              target="_blank"
+              >Phonebook</a
+            >
             <p>
-              Project about searching movies, and adding favorite movies to a
-              client personal library. Using pure JS, npm-packages and SCSS
+              Project phone book, user login, after which he can add and delete
+              contacts. Redux technology is used.
             </p>
           </li>
           <li>
-            <a href="https://github.com/SHEVEL0V" target="_blank">2</a>
+            <a
+              class="summary__link"
+              href="https://github.com/SHEVEL0V"
+              target="_blank"
+              >SHEVEL0V</a
+            >
             <p>Music festival site. Using React, SCSS</p>
           </li>
           <li>
-            <a href="https://github.com/SHEVEL0V" target="_blank">3</a>
+            <a
+              class="summary__link"
+              href="https://github.com/SHEVEL0V"
+              target="_blank"
+              >SHEVEL0V</a
+            >
             <p>
               Ice Cream company site. Neat and tasty design, responsible layout.
               Using Parcel, SCSS, JS
@@ -108,26 +147,28 @@
         </ul>
       </section>
       <section>
-        <h2>WORK EXPERIENCE</h2>
-        <p>2016-2022 year MTI compani</p>
+        <h2 class="summary__title-s">WORK EXPERIENCE</h2>
+        <p>2016-2022 year head of the logistics department MTI company</p>
         <b>Responsibilities:</b>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Control and implementation of work process timings</li>
+          <li>HR</li>
+          <li>Teamwork</li>
+          <li>
+            An experienced user of Microsoft Office and all logistics programs
+          </li>
         </ul>
       </section>
       <section>
-        <h2>EDUCATION</h2>
+        <h2 class="summary__title-s">EDUCATION</h2>
         <b>Kyiv Polytechnic Institute”</b>
-        <p>Faculty of Electronics |2009-2013</p>
+        <p>Faculty of Electronics | 2009-2013</p>
       </section>
       <section>
-        <h2>ADDITIONAL EDUCATION</h2>
+        <h2 class="summary__title-s">ADDITIONAL EDUCATION</h2>
         <b>IT School GoIT</b>
         <p>Full stack developer</p>
-        <p>September 2021 - September 2021 | Ukraine</p>
+        <p>October 2021 - October 2022 | Ukraine</p>
       </section>
     </div>
   </body>
