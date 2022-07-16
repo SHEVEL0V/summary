@@ -171,6 +171,8 @@ img {
   }
   .container {
     padding: 5px;
+    margin-top: 0px;
+    box-shadow: none;
   }
   .summary-comtainer {
     padding-left: 10px;
