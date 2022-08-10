@@ -160,10 +160,16 @@ img {
   line-height: 1.8;
   color: var(--second-color);
 }
-
+.summary__link-container {
+  display: flex;
+}
 .summary__link {
+  text-decoration: none;
   font-size: 16px;
-  color: rgba(28, 28, 108, 0.9);
+  color: #000000;
+}
+.margin-link {
+  margin-left: 8px;
 }
 .work__title {
   font-size: 16px;
