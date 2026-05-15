@@ -9,10 +9,10 @@
 
 The résumé uses a two-column layout:
 
-| Column | Content |
-|--------|---------|
+| Column                  | Content                                                              |
+| ----------------------- | -------------------------------------------------------------------- |
 | **Sidebar** (dark navy) | Photo · Contacts · Tech Skills (pill tags) · Soft Skills · Languages |
-| **Main** (white) | Hero header · Projects · Work Experience · Education |
+| **Main** (white)        | Hero header · Projects · Work Experience · Education                 |
 
 ---
 
@@ -31,15 +31,15 @@ summary/
 
 ## ⚡ Tech & Design
 
-| Topic | Choice |
-|-------|--------|
-| Font | [Inter](https://fonts.google.com/specimen/Inter) — system-UI feel, ATS-safe |
-| Layout | CSS Grid (two-column) + Flexbox internals |
-| Colors | Dark navy sidebar `#0f172a` + Indigo accent `#818cf8` |
-| Reset | [normalize.css 8](https://necolas.github.io/normalize.css/) |
-| Icons | Inline SVG sprite |
-| Responsive | Single breakpoint `@media (max-width: 640px)` → stacked |
-| Print | `@media print` — removes shadows, fills page width |
+| Topic      | Choice                                                                      |
+| ---------- | --------------------------------------------------------------------------- |
+| Font       | [Inter](https://fonts.google.com/specimen/Inter) — system-UI feel, ATS-safe |
+| Layout     | CSS Grid (two-column) + Flexbox internals                                   |
+| Colors     | Dark navy sidebar `#0f172a` + Indigo accent `#818cf8`                       |
+| Reset      | [normalize.css 8](https://necolas.github.io/normalize.css/)                 |
+| Icons      | Inline SVG sprite                                                           |
+| Responsive | Single breakpoint `@media (max-width: 640px)` → stacked                     |
+| Print      | `@media print` — removes shadows, fills page width                          |
 
 ---
 
@@ -49,7 +49,7 @@ summary/
 
 **Backend** — Node.js · GraphQL · REST API · Prisma ORM · JWT
 
-**Database** — MySQL · MongoDB
+**Database** — MySQL · PostgreSQL · MongoDB
 
 **Tools** — Git · Docker · Webpack · Parcel
 
@@ -57,14 +57,14 @@ summary/
 
 ## 📂 Projects Listed
 
-| Project | Live | Stack |
-|---------|------|-------|
-| **Kanban Board** | [kanban-cuec.onrender.com](https://kanban-cuec.onrender.com) | Next.js 16 · React 19 · Prisma · MySQL · MUI · JWT · Docker |
-| **Online Store — GraphQL** | [shop-gql.vercel.app](https://shop-gql.vercel.app/) | Next.js · Redux · GraphQL · TypeScript |
-| **Online Store — REST** | [shop-rest-a51dd6.netlify.app](https://shop-rest-a51dd6.netlify.app) | React · Redux · RTK Query · TypeScript |
-| **Movies App** | [movies-v3.vercel.app](https://movies-v3.vercel.app/) | React · TypeScript · React Query · TMDB API |
-| **Server — GraphQL** | [shopservergql.onrender.com](https://shopservergql.onrender.com) | Node.js · Apollo Server · MongoDB |
-| **Server — REST** | [shop-server-rest.onrender.com/docs](https://shop-server-rest.onrender.com/docs) | Node.js · Express · MongoDB · Swagger |
+| Project                    | Live                                                                             | Stack                                                       |
+| -------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Kanban Board**           | [kanban-cuec.onrender.com](https://kanban-cuec.onrender.com)                     | Next.js 16 · React 19 · Prisma · MySQL · MUI · JWT · Docker |
+| **Online Store — GraphQL** | [shop-gql.vercel.app](https://shop-gql.vercel.app/)                              | Next.js · Redux · GraphQL · TypeScript                      |
+| **Online Store — REST**    | [shop-rest-a51dd6.netlify.app](https://shop-rest-a51dd6.netlify.app)             | React · Redux · RTK Query · TypeScript                      |
+| **Movies App**             | [movies-v3.vercel.app](https://movies-v3.vercel.app/)                            | React · TypeScript · React Query · TMDB API                 |
+| **Server — GraphQL**       | [shopservergql.onrender.com](https://shopservergql.onrender.com)                 | Node.js · Apollo Server · MongoDB                           |
+| **Server — REST**          | [shop-server-rest.onrender.com/docs](https://shop-server-rest.onrender.com/docs) | Node.js · Express · MongoDB · Swagger                       |
 
 ---
 
@@ -108,10 +108,10 @@ npx serve .
 
 ## 📬 Contact
 
-| | |
-|-|-|
-| Email | [ashevelevmti@gmail.com](mailto:ashevelevmti@gmail.com) |
-| GitHub | [@SHEVEL0V](https://github.com/SHEVEL0V) |
+|          |                                                                           |
+| -------- | ------------------------------------------------------------------------- |
+| Email    | [an.shevelov@gmail.com](mailto:an.shevelov@gmail.com)                     |
+| GitHub   | [@SHEVEL0V](https://github.com/SHEVEL0V)                                  |
 | LinkedIn | [Andriy Shevelov](https://www.linkedin.com/in/andriy-shevelov-5439b3244/) |
 
 ---

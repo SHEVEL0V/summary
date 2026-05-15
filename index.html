@@ -17,361 +17,400 @@
         <link rel="stylesheet" href="./styles.css" />
         <title>Andriy Shevelov — Full-Stack Developer</title>
     </head>
-    <body class="container">
-        <!-- ═══ SIDEBAR ═══ -->
-        <aside class="sidebar">
-            <div class="photo-wrap">
-                <img src="./photo.jpg" alt="Andriy Shevelov" />
-            </div>
+    <body>
+        <div class="container">
+            <!-- ═══ SIDEBAR ═══ -->
+            <aside class="sidebar">
+                <div class="photo-wrap">
+                    <img src="./photo.jpg" alt="Andriy Shevelov" />
+                </div>
 
-            <section class="sidebar__section">
-                <h2 class="sidebar__title">CONTACTS</h2>
-                <ul class="sidebar__list contacts-list">
-                    <li>
-                        <a class="sidebar__link" href="tel:+380989444437">
-                            <svg class="icon"><use href="./sprite.svg#tel"></use></svg>
-                            +38 098 94 44 437
-                        </a>
-                    </li>
-                    <li>
-                        <a class="sidebar__link" href="mailto:ashevelevmti@gmail.com">
-                            <svg class="icon"><use href="./sprite.svg#mail"></use></svg>
-                            ashevelevmti@gmail.com
-                        </a>
-                    </li>
-                    <li>
-                        <a class="sidebar__link" href="https://github.com/SHEVEL0V" target="_blank">
-                            <svg class="icon"><use href="./sprite.svg#git"></use></svg>
-                            GitHub
-                        </a>
-                    </li>
-                    <li>
+                <section class="sidebar__section">
+                    <h2 class="sidebar__title">CONTACTS</h2>
+                    <ul class="sidebar__list contacts-list">
+                        <li>
+                            <a class="sidebar__link" href="tel:+380989444437">
+                                <svg class="icon"><use href="./sprite.svg#tel"></use></svg>
+                                +38 098 94 44 437
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar__link" href="mailto:an.shevelov@gmail.com">
+                                <svg class="icon"><use href="./sprite.svg#mail"></use></svg>
+                                an.shevelov@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="sidebar__link"
+                                href="https://github.com/SHEVEL0V"
+                                target="_blank"
+                            >
+                                <svg class="icon"><use href="./sprite.svg#git"></use></svg>
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="sidebar__link"
+                                href="https://www.linkedin.com/in/andriy-shevelov-5439b3244/"
+                                target="_blank"
+                            >
+                                <svg class="icon"><use href="./sprite.svg#in"></use></svg>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="sidebar__section">
+                    <h2 class="sidebar__title">TECH SKILLS</h2>
+
+                    <div class="skills-group">
+                        <p class="skills-group__label">Frontend</p>
+                        <div class="skills-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">SASS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React 19</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Material UI</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-group">
+                        <p class="skills-group__label">Backend</p>
+                        <div class="skills-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">GraphQL</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Prisma ORM</span>
+                            <span class="tag">JWT</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-group">
+                        <p class="skills-group__label">Database</p>
+                        <div class="skills-tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-group">
+                        <p class="skills-group__label">Tools</p>
+                        <div class="skills-tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Webpack</span>
+                            <span class="tag">Parcel</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sidebar__section">
+                    <h2 class="sidebar__title">SOFT SKILLS</h2>
+                    <ul class="sidebar__list">
+                        <li>Detail-oriented</li>
+                        <li>Punctual</li>
+                        <li>Eager to learn</li>
+                        <li>Team player</li>
+                    </ul>
+                </section>
+
+                <section class="sidebar__section">
+                    <h2 class="sidebar__title">LANGUAGES</h2>
+                    <ul class="sidebar__list">
+                        <li>Ukrainian — Native</li>
+                        <li>English — Pre-Intermediate</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- ═══ MAIN ═══ -->
+            <main class="main">
+                <header class="hero">
+                    <h1 class="hero__name">ANDRIY SHEVELOV</h1>
+                    <p class="hero__role">JUNIOR FULL-STACK DEVELOPER</p>
+                    <div class="hero__divider"></div>
+                    <p class="hero__summary">
+                        Full-stack developer specialising in React, Next.js and TypeScript on the
+                        front end, and Node.js, Prisma ORM and SQL/NoSQL databases on the back end.
+                        I build scalable, type-safe applications end-to-end &mdash; from responsive
+                        UI to secured REST &amp; GraphQL APIs and Docker deployments. Driven by
+                        clean architecture, continuous learning and measurable results.
+                    </p>
+                </header>
+
+                <!-- PROJECTS -->
+                <section class="section">
+                    <h2 class="section__title">PROJECTS</h2>
+                    <ul class="projects-list">
+                        <li class="project-item">
+                            <div class="project-item__links">
+                                <a
+                                    class="project-item__name"
+                                    href="https://kanban-cuec.onrender.com"
+                                    target="_blank"
+                                >
+                                    Kanban Board
+                                </a>
+                                <a
+                                    class="project-item__source"
+                                    href="https://github.com/SHEVEL0V/next-16_prisma.git"
+                                    target="_blank"
+                                >
+                                    GitHub &rarr;
+                                </a>
+                            </div>
+                            <div class="project-item__tags">
+                                <span class="tag tag--sm">Next.js 16</span>
+                                <span class="tag tag--sm">React 19</span>
+                                <span class="tag tag--sm">TypeScript</span>
+                                <span class="tag tag--sm">Prisma ORM</span>
+                                <span class="tag tag--sm">MySQL</span>
+                                <span class="tag tag--sm">Material UI</span>
+                                <span class="tag tag--sm">JWT</span>
+                                <span class="tag tag--sm">Docker</span>
+                            </div>
+                            <p class="project-item__desc">
+                                Full-stack Kanban task manager with drag-and-drop, secure JWT auth
+                                (bcrypt + AES-256-GCM), Prisma multi-file schema, server actions,
+                                React.memo optimisation and Docker deployment to Render.
+                            </p>
+                        </li>
+
+                        <li class="project-item">
+                            <div class="project-item__links">
+                                <a
+                                    class="project-item__name"
+                                    href="https://shop-gql.vercel.app/"
+                                    target="_blank"
+                                >
+                                    Online Store &mdash; GraphQL
+                                </a>
+                                <a
+                                    class="project-item__source"
+                                    href="https://github.com/SHEVEL0V/shop-gql.git"
+                                    target="_blank"
+                                >
+                                    GitHub &rarr;
+                                </a>
+                            </div>
+                            <div class="project-item__tags">
+                                <span class="tag tag--sm">Next.js</span>
+                                <span class="tag tag--sm">Redux</span>
+                                <span class="tag tag--sm">GraphQL</span>
+                                <span class="tag tag--sm">TypeScript</span>
+                            </div>
+                            <p class="project-item__desc">
+                                E-commerce platform with user registration, shopping cart and admin
+                                panel powered by a custom GraphQL API.
+                            </p>
+                        </li>
+
+                        <li class="project-item">
+                            <div class="project-item__links">
+                                <a
+                                    class="project-item__name"
+                                    href="https://shop-rest-a51dd6.netlify.app"
+                                    target="_blank"
+                                >
+                                    Online Store &mdash; REST
+                                </a>
+                                <a
+                                    class="project-item__source"
+                                    href="https://github.com/SHEVEL0V/shop-rest.git"
+                                    target="_blank"
+                                >
+                                    GitHub &rarr;
+                                </a>
+                            </div>
+                            <div class="project-item__tags">
+                                <span class="tag tag--sm">React</span>
+                                <span class="tag tag--sm">Redux</span>
+                                <span class="tag tag--sm">RTK Query</span>
+                                <span class="tag tag--sm">TypeScript</span>
+                            </div>
+                            <p class="project-item__desc">
+                                E-commerce platform with registration, shopping cart and admin panel
+                                consuming a REST API via RTK Query.
+                            </p>
+                        </li>
+
+                        <li class="project-item">
+                            <div class="project-item__links">
+                                <a
+                                    class="project-item__name"
+                                    href="https://movies-v3.vercel.app/"
+                                    target="_blank"
+                                >
+                                    Movies App
+                                </a>
+                                <a
+                                    class="project-item__source"
+                                    href="https://github.com/SHEVEL0V/movies-v3.git"
+                                    target="_blank"
+                                >
+                                    GitHub &rarr;
+                                </a>
+                            </div>
+                            <div class="project-item__tags">
+                                <span class="tag tag--sm">React</span>
+                                <span class="tag tag--sm">TypeScript</span>
+                                <span class="tag tag--sm">React Query</span>
+                                <span class="tag tag--sm">TMDB API</span>
+                            </div>
+                            <p class="project-item__desc">
+                                Movie catalogue integrating the TMDB API with search, filtering and
+                                detailed film pages.
+                            </p>
+                        </li>
+
+                        <li class="project-item">
+                            <div class="project-item__links">
+                                <a
+                                    class="project-item__name"
+                                    href="https://shopservergql.onrender.com"
+                                    target="_blank"
+                                >
+                                    Server &mdash; GraphQL
+                                </a>
+                                <a
+                                    class="project-item__source"
+                                    href="https://github.com/SHEVEL0V/server-Shop-Gql.git"
+                                    target="_blank"
+                                >
+                                    GitHub &rarr;
+                                </a>
+                            </div>
+                            <div class="project-item__tags">
+                                <span class="tag tag--sm">Node.js</span>
+                                <span class="tag tag--sm">Apollo Server</span>
+                                <span class="tag tag--sm">MongoDB</span>
+                            </div>
+                            <p class="project-item__desc">
+                                GraphQL API server built with Apollo Server and MongoDB, providing
+                                data for the Online Store GQL client.
+                            </p>
+                        </li>
+
+                        <li class="project-item">
+                            <div class="project-item__links">
+                                <a
+                                    class="project-item__name"
+                                    href="https://shop-server-rest.onrender.com/docs"
+                                    target="_blank"
+                                >
+                                    Server &mdash; REST
+                                </a>
+                                <a
+                                    class="project-item__source"
+                                    href="https://github.com/SHEVEL0V/server-Shop-Rest.git"
+                                    target="_blank"
+                                >
+                                    GitHub &rarr;
+                                </a>
+                            </div>
+                            <div class="project-item__tags">
+                                <span class="tag tag--sm">Node.js</span>
+                                <span class="tag tag--sm">Express</span>
+                                <span class="tag tag--sm">MongoDB</span>
+                                <span class="tag tag--sm">Swagger</span>
+                            </div>
+                            <p class="project-item__desc">
+                                RESTful API with full Swagger documentation, powering the Online
+                                Store REST client.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- WORK EXPERIENCE -->
+                <section class="section">
+                    <h2 class="section__title">WORK EXPERIENCE</h2>
+
+                    <div class="experience-item">
+                        <div class="experience-item__header">
+                            <span class="experience-item__role"
+                                >Serviceman &mdash; Armed Forces of Ukraine</span
+                            >
+                            <span class="experience-item__period">2022 &mdash; Present</span>
+                        </div>
+                        <span class="experience-item__company"
+                            >ZSU &mdash; Armed Forces of Ukraine</span
+                        >
+                        <ul>
+                            <li>Active service in defence of Ukraine</li>
+                            <li>
+                                Studying perspective military IT technologies and their practical
+                                application
+                            </li>
+                            <li>
+                                Continuous self-development in software engineering during service
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item experience-item--mt">
+                        <div class="experience-item__header">
+                            <span class="experience-item__role">Head of Logistics Department</span>
+                            <span class="experience-item__period">2016 &mdash; 2022</span>
+                        </div>
                         <a
-                            class="sidebar__link"
-                            href="https://www.linkedin.com/in/andriy-shevelov-5439b3244/"
+                            class="experience-item__company"
+                            href="https://www.mti.ua/"
                             target="_blank"
                         >
-                            <svg class="icon"><use href="./sprite.svg#in"></use></svg>
-                            LinkedIn
+                            MTI Company
                         </a>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="sidebar__section">
-                <h2 class="sidebar__title">TECH SKILLS</h2>
-
-                <div class="skills-group">
-                    <p class="skills-group__label">Frontend</p>
-                    <div class="skills-tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">SASS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">React 19</span>
-                        <span class="tag">Redux</span>
-                        <span class="tag">Next.js</span>
-                        <span class="tag">Material UI</span>
+                        <ul>
+                            <li>Process management and deadline control across the department</li>
+                            <li>Team leadership and HR coordination</li>
+                            <li>
+                                Advanced proficiency with Microsoft Office and logistics software
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </section>
 
-                <div class="skills-group">
-                    <p class="skills-group__label">Backend</p>
-                    <div class="skills-tags">
-                        <span class="tag">Node.js</span>
-                        <span class="tag">GraphQL</span>
-                        <span class="tag">REST API</span>
-                        <span class="tag">Prisma ORM</span>
-                        <span class="tag">JWT</span>
-                    </div>
-                </div>
-
-                <div class="skills-group">
-                    <p class="skills-group__label">Database</p>
-                    <div class="skills-tags">
-                        <span class="tag">MySQL</span>
-                        <span class="tag">MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="skills-group">
-                    <p class="skills-group__label">Tools</p>
-                    <div class="skills-tags">
-                        <span class="tag">Git</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Webpack</span>
-                        <span class="tag">Parcel</span>
-                    </div>
-                </div>
-            </section>
-
-            <section class="sidebar__section">
-                <h2 class="sidebar__title">SOFT SKILLS</h2>
-                <ul class="sidebar__list">
-                    <li>Detail-oriented</li>
-                    <li>Punctual</li>
-                    <li>Eager to learn</li>
-                    <li>Team player</li>
-                </ul>
-            </section>
-
-            <section class="sidebar__section">
-                <h2 class="sidebar__title">LANGUAGES</h2>
-                <ul class="sidebar__list">
-                    <li>Ukrainian — Native</li>
-                    <li>Russian — Native</li>
-                    <li>English — Pre-Intermediate</li>
-                </ul>
-            </section>
-        </aside>
-
-        <!-- ═══ MAIN ═══ -->
-        <main class="main">
-            <header class="hero">
-                <h1 class="hero__name">ANDRIY SHEVELOV</h1>
-                <p class="hero__role">JUNIOR FULL-STACK DEVELOPER</p>
-                <div class="hero__divider"></div>
-                <p class="hero__summary">
-                    Front-end developer with full-stack capabilities, specialising in React, Next.js
-                    and TypeScript. I build performant, type-safe web applications with clean
-                    architecture and modern tooling. Passionate about continuous learning and
-                    delivering result-driven solutions.
-                </p>
-            </header>
-
-            <!-- PROJECTS -->
-            <section class="section">
-                <h2 class="section__title">PROJECTS</h2>
-                <ul class="projects-list">
-                    <li class="project-item">
-                        <div class="project-item__links">
-                            <a
-                                class="project-item__name"
-                                href="https://kanban-cuec.onrender.com"
-                                target="_blank"
-                            >
-                                Kanban Board
-                            </a>
-                            <a
-                                class="project-item__source"
-                                href="https://github.com/SHEVEL0V/next-16_prisma.git"
-                                target="_blank"
-                            >
-                                GitHub &rarr;
-                            </a>
-                        </div>
-                        <div class="project-item__tags">
-                            <span class="tag tag--sm">Next.js 16</span>
-                            <span class="tag tag--sm">React 19</span>
-                            <span class="tag tag--sm">TypeScript</span>
-                            <span class="tag tag--sm">Prisma ORM</span>
-                            <span class="tag tag--sm">MySQL</span>
-                            <span class="tag tag--sm">Material UI</span>
-                            <span class="tag tag--sm">JWT</span>
-                            <span class="tag tag--sm">Docker</span>
-                        </div>
-                        <p class="project-item__desc">
-                            Full-stack Kanban task manager with drag-and-drop, secure JWT auth
-                            (bcrypt + AES-256-GCM), Prisma multi-file schema, server actions,
-                            React.memo optimisation and Docker deployment to Render.
-                        </p>
-                    </li>
-
-                    <li class="project-item">
-                        <div class="project-item__links">
-                            <a
-                                class="project-item__name"
-                                href="https://shop-gql.vercel.app/"
-                                target="_blank"
-                            >
-                                Online Store &mdash; GraphQL
-                            </a>
-                            <a
-                                class="project-item__source"
-                                href="https://github.com/SHEVEL0V/shop-gql.git"
-                                target="_blank"
-                            >
-                                GitHub &rarr;
-                            </a>
-                        </div>
-                        <div class="project-item__tags">
-                            <span class="tag tag--sm">Next.js</span>
-                            <span class="tag tag--sm">Redux</span>
-                            <span class="tag tag--sm">GraphQL</span>
-                            <span class="tag tag--sm">TypeScript</span>
-                        </div>
-                        <p class="project-item__desc">
-                            E-commerce platform with user registration, shopping cart and admin
-                            panel powered by a custom GraphQL API.
-                        </p>
-                    </li>
-
-                    <li class="project-item">
-                        <div class="project-item__links">
-                            <a
-                                class="project-item__name"
-                                href="https://shop-rest-a51dd6.netlify.app"
-                                target="_blank"
-                            >
-                                Online Store &mdash; REST
-                            </a>
-                            <a
-                                class="project-item__source"
-                                href="https://github.com/SHEVEL0V/shop-rest.git"
-                                target="_blank"
-                            >
-                                GitHub &rarr;
-                            </a>
-                        </div>
-                        <div class="project-item__tags">
-                            <span class="tag tag--sm">React</span>
-                            <span class="tag tag--sm">Redux</span>
-                            <span class="tag tag--sm">RTK Query</span>
-                            <span class="tag tag--sm">TypeScript</span>
-                        </div>
-                        <p class="project-item__desc">
-                            E-commerce platform with registration, shopping cart and admin panel
-                            consuming a REST API via RTK Query.
-                        </p>
-                    </li>
-
-                    <li class="project-item">
-                        <div class="project-item__links">
-                            <a
-                                class="project-item__name"
-                                href="https://movies-v3.vercel.app/"
-                                target="_blank"
-                            >
-                                Movies App
-                            </a>
-                            <a
-                                class="project-item__source"
-                                href="https://github.com/SHEVEL0V/movies-v3.git"
-                                target="_blank"
-                            >
-                                GitHub &rarr;
-                            </a>
-                        </div>
-                        <div class="project-item__tags">
-                            <span class="tag tag--sm">React</span>
-                            <span class="tag tag--sm">TypeScript</span>
-                            <span class="tag tag--sm">React Query</span>
-                            <span class="tag tag--sm">TMDB API</span>
-                        </div>
-                        <p class="project-item__desc">
-                            Movie catalogue integrating the TMDB API with search, filtering and
-                            detailed film pages.
-                        </p>
-                    </li>
-
-                    <li class="project-item">
-                        <div class="project-item__links">
-                            <a
-                                class="project-item__name"
-                                href="https://shopservergql.onrender.com"
-                                target="_blank"
-                            >
-                                Server &mdash; GraphQL
-                            </a>
-                            <a
-                                class="project-item__source"
-                                href="https://github.com/SHEVEL0V/server-Shop-Gql.git"
-                                target="_blank"
-                            >
-                                GitHub &rarr;
-                            </a>
-                        </div>
-                        <div class="project-item__tags">
-                            <span class="tag tag--sm">Node.js</span>
-                            <span class="tag tag--sm">Apollo Server</span>
-                            <span class="tag tag--sm">MongoDB</span>
-                        </div>
-                        <p class="project-item__desc">
-                            GraphQL API server built with Apollo Server and MongoDB, providing data
-                            for the Online Store GQL client.
-                        </p>
-                    </li>
-
-                    <li class="project-item">
-                        <div class="project-item__links">
-                            <a
-                                class="project-item__name"
-                                href="https://shop-server-rest.onrender.com/docs"
-                                target="_blank"
-                            >
-                                Server &mdash; REST
-                            </a>
-                            <a
-                                class="project-item__source"
-                                href="https://github.com/SHEVEL0V/server-Shop-Rest.git"
-                                target="_blank"
-                            >
-                                GitHub &rarr;
-                            </a>
-                        </div>
-                        <div class="project-item__tags">
-                            <span class="tag tag--sm">Node.js</span>
-                            <span class="tag tag--sm">Express</span>
-                            <span class="tag tag--sm">MongoDB</span>
-                            <span class="tag tag--sm">Swagger</span>
-                        </div>
-                        <p class="project-item__desc">
-                            RESTful API with full Swagger documentation, powering the Online Store
-                            REST client.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- WORK EXPERIENCE -->
-            <section class="section">
-                <h2 class="section__title">WORK EXPERIENCE</h2>
-                <div class="experience-item">
-                    <div class="experience-item__header">
-                        <span class="experience-item__role">Head of Logistics Department</span>
-                        <span class="experience-item__period">2016 &mdash; 2022</span>
-                    </div>
-                    <a class="experience-item__company" href="https://www.mti.ua/" target="_blank">
-                        MTI Company
-                    </a>
-                    <ul>
-                        <li>Process management and deadline control across the department</li>
-                        <li>Team leadership and HR coordination</li>
-                        <li>Advanced proficiency with Microsoft Office and logistics software</li>
+                <!-- EDUCATION -->
+                <section class="section">
+                    <h2 class="section__title">EDUCATION</h2>
+                    <ul class="education-list">
+                        <li class="education-item">
+                            <div class="education-item__header">
+                                <b>
+                                    IT School
+                                    <a class="accent-link" href="https://goit.ua/" target="_blank">
+                                        <span class="goit-go">Go</span
+                                        ><span class="goit-it">IT</span>
+                                    </a>
+                                </b>
+                                <span class="education-item__period"
+                                    >Oct 2021 &mdash; Oct 2022</span
+                                >
+                            </div>
+                            <p>Full-Stack Developer &middot; Ukraine</p>
+                        </li>
+                        <li class="education-item">
+                            <div class="education-item__header">
+                                <b>
+                                    <a class="accent-link" href="https://kpi.ua/" target="_blank">
+                                        Kyiv Polytechnic Institute
+                                    </a>
+                                </b>
+                                <span class="education-item__period">2009 &mdash; 2013</span>
+                            </div>
+                            <p>B.Sc. Electronics</p>
+                        </li>
                     </ul>
-                </div>
-            </section>
-
-            <!-- EDUCATION -->
-            <section class="section">
-                <h2 class="section__title">EDUCATION</h2>
-                <ul class="education-list">
-                    <li class="education-item">
-                        <div class="education-item__header">
-                            <b>
-                                IT School
-                                <a class="accent-link" href="https://goit.ua/" target="_blank">
-                                    <span class="goit-go">Go</span><span class="goit-it">IT</span>
-                                </a>
-                            </b>
-                            <span class="education-item__period">Oct 2021 &mdash; Oct 2022</span>
-                        </div>
-                        <p>Full-Stack Developer &middot; Ukraine</p>
-                    </li>
-                    <li class="education-item">
-                        <div class="education-item__header">
-                            <b>
-                                <a class="accent-link" href="https://kpi.ua/" target="_blank">
-                                    Kyiv Polytechnic Institute
-                                </a>
-                            </b>
-                            <span class="education-item__period">2009 &mdash; 2013</span>
-                        </div>
-                        <p>B.Sc. Electronics</p>
-                    </li>
-                </ul>
-            </section>
-        </main>
+                </section>
+            </main>
+        </div>
     </body>
 </html>

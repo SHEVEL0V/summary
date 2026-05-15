@@ -4,13 +4,14 @@
    DESIGN TOKENS
 ═══════════════════════════════════════════ */
 :root {
-    /* Palette */
+    /* Sidebar */
     --sidebar-bg: #0f172a;
     --sidebar-text: #cbd5e1;
     --sidebar-muted: #64748b;
     --accent: #818cf8; /* indigo-400 */
     --accent-hover: #a5b4fc; /* indigo-300 */
 
+    /* Main */
     --main-bg: #ffffff;
     --text-primary: #0f172a;
     --text-secondary: #475569;
@@ -18,7 +19,9 @@
     --tag-bg: #f1f5f9;
     --tag-color: #334155;
 
-    /* Typography */
+    /* Page */
+    --body-bg: #dde3ed;
+
     --font: "Inter", system-ui, -apple-system, sans-serif;
 }
 
@@ -31,44 +34,47 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font);
     font-size: 13px;
     font-weight: 400;
     line-height: 1.5;
     color: var(--text-primary);
-    background: #dde3ed;
+    background: var(--body-bg);
+    min-height: 100vh;
+    padding: 28px 16px 48px;
 }
 
 ul {
     margin: 0;
     padding: 0;
 }
-
 li {
     margin-bottom: 4px;
 }
-
 p {
     margin: 0;
 }
-
 a {
     transition: color 0.18s ease;
 }
 
 /* ═══════════════════════════════════════════
-   LAYOUT
+   LAYOUT  —  обгортка-картка
 ═══════════════════════════════════════════ */
 .container {
     display: grid;
-    grid-template-columns: 215px 1fr;
+    grid-template-columns: 220px 1fr;
     max-width: 960px;
-    margin: 24px auto;
+    margin: 0 auto;
     background: var(--main-bg);
-    box-shadow: 0 8px 48px rgba(15, 23, 42, 0.18);
-    border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0 6px 40px rgba(46, 61, 80, 0.12);
+    border-radius: 12px;
+    overflow: hidden; /* обрізає кути у дочірніх елементів */
 }
 
 /* ═══════════════════════════════════════════
@@ -77,13 +83,13 @@ a {
 .sidebar {
     background: var(--sidebar-bg);
     color: var(--sidebar-text);
-    padding: 28px 16px 32px;
+    padding: 30px 18px 36px;
 }
 
-/* Photo */
+/* Фото */
 .photo-wrap {
-    width: 136px;
-    height: 136px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 26px;
@@ -98,23 +104,23 @@ a {
     object-fit: cover;
 }
 
-/* Section */
+/* Секції сайдбару */
 .sidebar__section {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .sidebar__title {
-    font-size: 9.5px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--accent);
     border-bottom: 1px solid rgba(129, 140, 248, 0.28);
     padding-bottom: 5px;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
 }
 
-/* Lists */
+/* Списки */
 .sidebar__list {
     list-style: none;
     padding: 0;
@@ -123,14 +129,14 @@ a {
 .sidebar__list li {
     font-size: 12px;
     color: var(--sidebar-text);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .contacts-list li {
     list-style: none;
 }
 
-/* Links */
+/* Посилання */
 .sidebar__link {
     display: flex;
     align-items: center;
@@ -144,7 +150,7 @@ a {
     color: var(--accent-hover);
 }
 
-/* SVG icons */
+/* SVG-іконки */
 .icon {
     width: 12px;
     height: 12px;
@@ -153,19 +159,19 @@ a {
 }
 
 /* ═══════════════════════════════════════════
-   SKILL TAGS  (sidebar)
+   SKILL TAGS — сайдбар
 ═══════════════════════════════════════════ */
 .skills-group {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
 }
 
 .skills-group__label {
-    font-size: 9.5px;
+    font-size: 9px;
     font-weight: 600;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: var(--sidebar-muted);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .skills-tags {
@@ -174,6 +180,7 @@ a {
     gap: 4px;
 }
 
+/* Пілюлі у сайдбарі */
 .tag {
     display: inline-block;
     background: rgba(129, 140, 248, 0.13);
@@ -187,40 +194,41 @@ a {
 }
 
 /* ═══════════════════════════════════════════
-   MAIN CONTENT
+   MAIN
 ═══════════════════════════════════════════ */
 .main {
-    padding: 0 30px 30px;
-    overflow: hidden;
+    padding: 0 30px 32px;
+    background: var(--main-bg);
 }
 
-/* ─── Hero / Header ─── */
+/* ─── Hero ─── */
 .hero {
     background: var(--sidebar-bg);
     margin: 0 -30px;
-    padding: 28px 30px 22px;
+    padding: 30px 30px 24px;
     color: #f8fafc;
 }
 
 .hero__name {
-    margin: 0 0 3px;
-    font-size: 28px;
+    margin: 0 0 4px;
+    font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.05em;
-    line-height: 1.1;
+    line-height: 1.15;
+    color: #f8fafc;
 }
 
 .hero__role {
     margin: 0 0 14px;
-    font-size: 11.5px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--accent);
 }
 
 .hero__divider {
-    width: 40px;
+    width: 36px;
     height: 2px;
     background: var(--accent);
     border-radius: 2px;
@@ -229,38 +237,43 @@ a {
 
 .hero__summary {
     font-size: 12.5px;
-    line-height: 1.75;
+    line-height: 1.8;
     color: #94a3b8;
-    max-width: 540px;
+    max-width: 520px;
 }
 
-/* ─── Sections ─── */
+/* ─── Секції ─── */
 .section {
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .section__title {
-    font-size: 9.5px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.17em;
     text-transform: uppercase;
     color: var(--text-secondary);
     border-bottom: 2px solid var(--sidebar-bg);
     padding-bottom: 5px;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
 }
 
-/* ─── Projects ─── */
+/* ─── Проєкти ─── */
 .projects-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: 14px;
 }
 
 .project-item {
     border-left: 2px solid var(--accent);
-    padding-left: 11px;
+    padding-left: 12px;
+    transition: border-color 0.18s;
+}
+
+.project-item:hover {
+    border-color: var(--accent-hover);
 }
 
 .project-item__links {
@@ -278,7 +291,7 @@ a {
 }
 
 .project-item__name:hover {
-    color: #6366f1;
+    color: var(--accent);
 }
 
 .project-item__source {
@@ -289,7 +302,7 @@ a {
 }
 
 .project-item__source:hover {
-    color: #6366f1;
+    color: var(--accent-hover);
 }
 
 .project-item__tags {
@@ -299,7 +312,7 @@ a {
     margin-bottom: 5px;
 }
 
-/* Inline tags inside main content */
+/* Пілюлі у main-контенті */
 .tag--sm {
     background: var(--tag-bg);
     color: var(--tag-color);
@@ -317,10 +330,14 @@ a {
     line-height: 1.65;
 }
 
-/* ─── Experience ─── */
+/* ─── Досвід ─── */
+.experience-item--mt {
+    margin-top: 14px;
+}
+
 .experience-item {
     border-left: 2px solid var(--accent);
-    padding-left: 11px;
+    padding-left: 12px;
 }
 
 .experience-item__header {
@@ -350,11 +367,11 @@ a {
     font-weight: 500;
     color: var(--accent);
     text-decoration: none;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 
 .experience-item__company:hover {
-    color: #6366f1;
+    color: var(--accent-hover);
 }
 
 .experience-item ul {
@@ -366,21 +383,21 @@ a {
 .experience-item li {
     font-size: 12px;
     color: var(--text-secondary);
-    line-height: 1.55;
+    line-height: 1.6;
     margin-bottom: 3px;
 }
 
-/* ─── Education ─── */
+/* ─── Освіта ─── */
 .education-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 11px;
+    gap: 13px;
 }
 
 .education-item {
     border-left: 2px solid var(--accent);
-    padding-left: 11px;
+    padding-left: 12px;
 }
 
 .education-item__header {
@@ -408,7 +425,7 @@ a {
     color: var(--text-secondary);
 }
 
-/* ─── Inline links ─── */
+/* ─── Inline-посилання ─── */
 .accent-link {
     text-decoration: none;
     color: inherit;
@@ -421,22 +438,25 @@ a {
 
 .goit-it {
     font-family: Arial, Helvetica, sans-serif;
-    color: #6366f1;
+    color: var(--accent);
 }
 
 /* ═══════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════ */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 660px) {
+    body {
+        padding: 0;
+    }
+
     .container {
         grid-template-columns: 1fr;
-        margin: 0;
         border-radius: 0;
         box-shadow: none;
     }
 
     .sidebar {
-        padding: 20px 16px 24px;
+        padding: 22px 16px 26px;
     }
 
     .photo-wrap {
@@ -446,19 +466,18 @@ a {
 
     .hero {
         margin: 0 -16px;
-        padding: 20px 16px 18px;
+        padding: 22px 16px 18px;
     }
 
     .hero__name {
         font-size: 22px;
     }
-
     .hero__role {
         font-size: 10px;
     }
 
     .main {
-        padding: 0 16px 24px;
+        padding: 0 16px 28px;
     }
 
     .experience-item__header,
@@ -468,13 +487,16 @@ a {
     }
 }
 
+/* ═══════════════════════════════════════════
+   PRINT
+═══════════════════════════════════════════ */
 @media print {
     body {
+        padding: 0;
         background: white;
     }
 
     .container {
-        margin: 0;
         box-shadow: none;
         border-radius: 0;
         max-width: 100%;
